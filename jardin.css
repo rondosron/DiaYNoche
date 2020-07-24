@@ -1,0 +1,335 @@
+body{
+	margin: 0;
+	position: relative;
+}
+/*
+.adelante{
+	position: absolute;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+}
+.snowflake {
+	color: white;
+	position: absolute;
+}
+*/
+
+.contenedor{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	overflow: hidden;
+	animation-name: claroOscuro;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes claroOscuro {
+	0% { background: #0394b3; }
+	35% { background: #0394b3; }
+	60% { background: black; }
+	75% { background: black; }
+	100% { background: #0394b3; }
+}
+
+.sol{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+.luna{
+	position: absolute;
+	top: 90px;
+	right: -1200px;
+}
+
+.contenedornubes {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	animation-name: opaco;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+}
+
+@keyframes opaco {
+	0% { opacity: 1; }
+	25% { opacity: 1; }
+	45% { opacity: 0; }
+	80% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.nube1{
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	animation-name: alCostadoUno;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transition: all;
+}
+
+@keyframes alCostadoUno {
+	25% { left: 25px; }
+	55% { left: -400px; }
+	55.001% { left: 2300px; }
+	65% { left: 2300px; }
+}
+
+.nube2{
+	position: absolute;
+	top: 190px;
+	left: 300px;
+	transform: scaleX(-1);
+	animation-name: alCostadoDos;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transition: all;
+}
+
+@keyframes alCostadoDos {
+	25% { left: 300px; }
+	55% { left: -400px; }
+	55.001% { left: 2300px; }
+	65% { left: 2300px; }
+}
+
+.nube3{
+	position: absolute;
+	top: 10px;
+	left: 523px;
+	animation-name: alCostadoTres;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transition: all;
+}
+
+@keyframes alCostadoTres {
+	25% { left: 523px; }
+	55% { left: -400px; }
+	55.001% { left: 2300px; }
+	65% { left: 2300px; }
+}
+
+.nube4{
+	position: absolute;
+	top: 380px;
+	left: 700px;
+	transform: scaleX(-1);
+	animation-name: alCostadoCuatro;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transition: all;
+}
+
+@keyframes alCostadoCuatro {
+	25% { left: 700px; }
+	55% { left: -400px; }
+	55.001% { left: 2300px; }
+	65% { left: 2300px; }
+}
+
+.nube5{
+	position: absolute;
+	top: 132px;
+	right: -250px;
+	animation-name: alCostadoCinco;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	transition: all;
+}
+
+@keyframes alCostadoCinco {
+	25% { right: -250px; }
+	55% { right: 2750px; }
+	55.001% { right: -500px; }
+	65% { right: -500px; }
+}
+
+.bosque{
+	width: 100%;
+}
+
+.plantas{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 75%;
+	overflow: hidden;
+	animation-name: haciaAbajo;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes haciaAbajo {
+	0% { bottom: 15px; }
+	30% { bottom: 15px; }
+	60% { bottom: -300px; }
+	85% { bottom: -300px; }
+	100% { bottom: 15px; }
+}
+
+.planta{
+	width: 5%;
+	height: 5%;
+}
+
+.planta1{
+
+}
+.planta2{
+
+}
+.planta3{
+
+}
+.planta4{
+
+}
+.planta5{
+
+}
+.planta6{
+
+}
+.planta7{
+}
+
+.pasto{
+	position: absolute;
+    bottom: 0px;
+    height: 15px;
+    width: 77%;
+    background: #12812e;
+    border-radius: 15px;
+}
+
+.animacionsol {
+	animation-name: solCostado;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes solCostado {
+	0% { right: ; }
+	25% { right: 45px ; }
+	55% { right: 2500px; }
+	55.001% { right: -500px; }
+	70% { right: -500px; }
+}
+
+.animacionluna {
+	animation-name: lunaMov;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes lunaMov {
+	35% { right: -400px; }
+	65% { right: 1250px; }
+	80% { right: 1250px; }
+	95% { right: 1750px; }
+	95.001% { right: -1200px; }
+	100% { right: ; }
+}
+
+.termometroBarraSup {
+	position: absolute;
+	height: 5.5cm;
+	width: 1cm;
+	background: rgb(227,227,227);
+	background: -webkit-linear-gradient(left, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	border-radius: 20px;
+	bottom: 150px;
+}
+
+.termometroCentro{
+	position: absolute;
+	height: 2cm;
+	width: 2cm;
+	border-radius: 50%;
+	background: rgb(227,227,227);
+	background: linear-gradient(90deg, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	bottom: 100px;
+}
+
+.termometroBarraInf {
+	position: absolute;
+	height: 2.5cm;
+	width: 1cm;
+	background: rgb(227,227,227);
+	background: -webkit-linear-gradient(left, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(227,227,227,1) 35%, rgba(255,255,255,1) 100%);
+	border-radius: 20px;
+	bottom: 25px;
+}
+
+.barramercurioSup {
+	height: 5.2cm;
+	width: 0.7cm;
+	position: absolute;
+	background-color: red;
+	z-index: 2;
+	border-radius: 20px;
+	bottom: 146px;
+}
+
+.barramercurioInf{
+	height: 2.5cm;
+	width: 0.7cm;
+	position: absolute;
+	background-color: red;
+	z-index: 2;
+	border-radius: 20px;
+	bottom: 30px;
+/*	transform-origin: top;
+	transform: rotateX(180deg);*/
+}
+
+.bolamercurio {
+	height: 1.7cm;
+	width: 1.7cm;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	bottom: 106px;
+	z-index: 3;
+	font-family: sans-serif;
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.termometro {
+	position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50px;
+    bottom: -12px;
+}
